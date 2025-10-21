@@ -1,0 +1,175 @@
+/* Reset básico e fonte */
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #4b3b28; /* marrom escuro */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fdf6e3; /* bege claro suave */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #5c4825; /* marrom escuro */
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  text-shadow: 0 1px 2px #c9a66bcc;
+}
+
+/* Container geral do formulário */
+form {
+  background-color: #fff7e6; /* bege claro */
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(124, 96, 41, 0.15);
+  width: 100%;
+  max-width: 900px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+  gap: 40px 50px;
+}
+
+/* Cada coluna do formulário */
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Labels dentro das colunas */
+form label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #6b5332; /* marrom médio */
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Inputs grandes, com bordas arredondadas */
+form input[type="text"],
+form input[type="email"] {
+  padding: 14px 20px;
+  border-radius: 18px;
+  border: 2.5px solid #d4b96f; /* dourado suave */
+  background-color: #fcf8f0; /* bege clarinho */
+  font-size: 1.1rem;
+  color: #4b3b28;
+  font-weight: 600;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  outline-offset: 4px;
+  outline-color: transparent;
+}
+
+/* Foco nos inputs */
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  border-color: #c9a66b; /* dourado mais forte */
+  background-color: #fff7e6;
+  outline-color: #c9a66b;
+  box-shadow: 0 0 10px 2px #c9a66b44;
+  cursor: text;
+}
+
+/* Botões: Salvar e Voltar alinhados lado a lado */
+.form-buttons {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+/* Botão Salvar */
+form input[type="submit"] {
+  background-color: #c9a66b;
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 14px 48px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(201, 166, 107, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  max-width: 220px;
+  user-select: none;
+}
+
+form input[type="submit"]:hover {
+  background-color: #b18636;
+  box-shadow: 0 10px 28px rgba(177, 134, 54, 0.7);
+}
+
+/* Botão Voltar */
+a input[type="button"] {
+  background-color: transparent;
+  color: #6b5332;
+  border: 3px solid #c9a66b;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 14px 48px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  flex: 1;
+  max-width: 220px;
+  user-select: none;
+}
+
+a input[type="button"]:hover {
+  background-color: #c9a66b;
+  color: white;
+}
+
+/* Responsivo: em telas pequenas o formulário vira coluna única */
+@media (max-width: 700px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+  }
+  .form-column {
+    width: 100%;
+    gap: 25px;
+  }
+  .form-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  form input[type="submit"],
+  a input[type="button"] {
+    max-width: 100%;
+  }
+}
+
+a.nao{
+ float:right;
+  text-decoration: none;
+  margin-bottom: 10px;
+   background-color: transparent;
+  color: #6b5332;
+  border: 2.5px solid #c9a66b;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 12px 36px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+

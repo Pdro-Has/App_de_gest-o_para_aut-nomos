@@ -1,0 +1,136 @@
+/* Reset básico e fonte */
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #4b3b28;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fdf6e3; /* bege claro suave */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #5c4825; /* marrom escuro */
+  margin-bottom: 40px;
+  text-shadow: 0 1px 2px #c9a66bcc;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Formulário estilo card horizontal */
+form {
+  background-color: #fff7e6; /* bege claro */
+  box-shadow: 0 12px 30px rgba(124, 96, 41, 0.15);
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Cada grupo label + input em bloco vertical */
+form label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #6b5332;
+  margin-bottom: 8px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Wrapper para cada input+label, para criar colunas */
+.form-group {
+  flex: 1 1 45%;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs com bordas arredondadas e cores suaves */
+form input[type="text"],
+form input[type="email"] {
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 2px solid #d4b96f;
+  background-color: #fcf8f0;
+  font-size: 1rem;
+  color: #4b3b28;
+  font-family: 'Montserrat', sans-serif;
+  cursor: not-allowed;
+  transition: border-color 0.3s ease;
+}
+
+form input:disabled {
+  opacity: 0.85;
+}
+
+/* Botão Voltar estilizado */
+a input[type="button"] {
+  cursor: pointer;
+  background-color: #c9a66b;
+  color: #fff;
+  font-weight: 700;
+  padding: 14px 40px;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 7px 18px rgba(201, 166, 107, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  user-select: none;
+   margin-left: 342px;
+}
+
+a input[type="button"]:hover {
+  background-color: #b18636;
+  box-shadow: 0 10px 25px rgba(177, 134, 54, 0.7);
+}
+
+/* Responsivo - em telas menores empilha */
+@media (max-width: 700px) {
+  form {
+    flex-direction: column;
+    padding: 25px 20px;
+  }
+  .form-group {
+    flex-basis: 100%;
+    min-width: unset;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+}
+#enviar{
+  color: #fcf8f0;
+  background-color: #c9a66b;
+}
+
+h2.h2{
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #5c4825; /* marrom escuro */
+
+  text-shadow: 0 1px 2px #c9a66bcc;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}

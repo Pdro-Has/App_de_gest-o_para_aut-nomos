@@ -1,0 +1,77 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #F5F5DC, #FFF8E1); /* Bege claro */
+  color: #5D4037; /* Marrom escuro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px 20px 40px;
+  user-select: none;
+}
+
+.container {
+  background-color: #fffaf0; /* Tom de fundo leve */
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(93, 64, 55, 0.2);
+  padding: 40px 60px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.8rem;
+  color: #8D6E63; /* Marrom médio */
+  margin-bottom: 30px;
+}
+
+p {
+  color: #FFC107; /* Amarelo ouro */
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  letter-spacing: 0.03em;
+}
+
+/* Botões */
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+select,
+button {
+  background-color: #8D6E63; /* Marrom médio */
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(141, 110, 99, 0.3);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff; /* Letras brancas */
+  appearance: none; 
+}
+
+button:hover {
+  background-color: #FFEB3B; /* Amarelo suave */
+  color: #5D4037; /* Marrom escuro */
+  box-shadow: 0 10px 25px rgba(255, 235, 59, 0.6);
+}
+
+option{
+  background-color: #F5F5DC;
+  color: black;
+}

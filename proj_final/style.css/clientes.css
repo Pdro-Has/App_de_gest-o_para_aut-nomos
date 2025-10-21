@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #F5F5DC, #FFF8E1); /* Bege claro */
+  color: #5D4037; /* Marrom escuro */
+  padding: 40px 20px;
+  min-height: 100vh;
+  transition: background 0.4s, color 0.4s;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #8D6E63;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Botão de voltar */
+a[href*="index.php"] .material-symbols-outlined {
+  font-size: 1.5rem;
+  color: #5D4037;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Formulário de busca e ações */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #BCAAA4;
+  border-radius: 8px;
+  flex-grow: 1;
+  min-width: 180px;
+}
+
+input[type="submit"],
+input[type="button"] {
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #8D6E63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #FFEB3B;
+  color: #5D4037;
+}
+
+/* Botão adicionar */
+#add {
+  background-color: #8D6E63;
+  color: white;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+#add:hover {
+  background-color: #FFEB3B;
+  color: #5D4037;
+}
+
+/* Tabela de clientes */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #D7CCC8;
+  text-align: center;
+}
+
+th {
+  background-color: #D7CCC8;
+  font-weight: bold;
+}
+
+.material-symbols-outlined {
+  font-size: 1.4rem;
+  color: #5D4037;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.material-symbols-outlined:hover {
+  color: #FFEB3B;
+}
+
+/* Mensagem */
+p:last-of-type {
+  font-style: italic;
+  color: #6D4C41;
+}
+
+/* Modo escuro */
+body[data-theme="dark"] {
+  background: linear-gradient(135deg, #1A120F, #2E1F1A);
+  color: #FDEBD0;
+}
+
+body[data-theme="dark"] h1 {
+  color: #FDEBD0;
+}
+
+body[data-theme="dark"] p {
+  color: #EADBC8;
+}
+
+body[data-theme="dark"] input[type="text"] {
+  background-color: #3B2A22;
+  color: #FDEBD0;
+  border: 1px solid #BFA132;
+}
+
+body[data-theme="dark"] input[type="submit"],
+body[data-theme="dark"] input[type="button"],
+body[data-theme="dark"] #add {
+  background-color: #D4AF37;
+  color: #1A120F;
+}
+
+body[data-theme="dark"] input[type="submit"]:hover,
+body[data-theme="dark"] input[type="button"]:hover,
+body[data-theme="dark"] #add:hover {
+  background-color: #BFA132;
+  color: #FFF8E1;
+}
+
+body[data-theme="dark"] table {
+  border-color: #4E342E;
+}
+
+body[data-theme="dark"] th {
+  background-color: #4E342E;
+  color: #FDEBD0;
+}
+
+body[data-theme="dark"] td {
+  background-color: #3B2A22;
+  color: #FDEBD0;
+}
+
+body[data-theme="dark"] .material-symbols-outlined {
+  color: #D4AF37;
+}
+
+body[data-theme="dark"] .material-symbols-outlined:hover {
+  color: #FFF8E1;
+}

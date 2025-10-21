@@ -1,0 +1,38 @@
+O objetivo do projeto é criar um software multilingue que tenha um CRUD em 4 linguas da europa ocidental,
+sendo elas : ingles, portugues, espanhol, frances.
+
+O usuario final é um MEI (micro-empresario) do ramo de marcenaria.
+
+as paginas serão: 
+
+login
+
+index ===> Configurações   --  clientes    --    Notas
+
+                |                 |                 |
+            idioma          detalha cliente     Orçamentos -- Itens orçamentos
+                |                 |                 |
+        alterar senha       altera cliente       Serviços
+                |                 |
+            Logout          exclui cliente
+                |
+        Modo Claro/Escuro
+
+
+
+esse é o prototipo base
+
+vc fez ontem a pagina login,e parou na parte de mudar o  css de acordo com a linguagem selecionada,
+afgora falta fazer funcionar o css de acordo com a lingua (php puro) 
+e botão recuperar senha. 10/05
+
+
+dica do paulo para o css,guarde o caminho dos css em variaveis de sessao e careegue variavel x ou y a depender do select (dentro do head) 11/05
+
+Voce parou no Edita cliente na parte de subir os dados do endereco do cliente,relação  n:n , Transaction , rollback e commit são os assuntos, resolva 11/05
+
+
+
+
+
+

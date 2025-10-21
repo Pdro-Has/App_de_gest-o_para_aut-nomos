@@ -1,0 +1,116 @@
+/* Importa fontes */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --font-titulo: 'Merriweather', serif;
+  --font-texto: 'Montserrat', sans-serif;
+
+  /* Tema claro */
+  --bg-claro: #fdfaf5;
+  --texto-claro: #2c2c2c;
+  --input-claro: #fff;
+  --borda-claro: #ccc;
+  --btn-claro: #f4e3c1;
+  --btn-hover-claro: #e3d3ad;
+
+  /* Tema escuro */
+  --bg-escuro: #121212;
+  --texto-escuro: #f0f0f0;
+  --input-escuro: #1e1e1e;
+  --borda-escuro: #444;
+  --btn-escuro: #333;
+  --btn-hover-escuro: #444;
+}
+
+body {
+  font-family: var(--font-texto);
+  background-color: var(--bg-claro);
+  color: var(--texto-claro);
+  margin: 0;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+  font-family: var(--font-titulo);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--texto-claro);
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #ffffffdd;
+  border: 1px solid var(--borda-claro);
+  border-radius: 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--texto-claro);
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--borda-claro);
+  background-color: var(--input-claro);
+  color: var(--texto-claro);
+  font-family: var(--font-texto);
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: var(--btn-claro);
+  color: var(--texto-claro);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: var(--font-texto);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--btn-hover-claro);
+}
+
+/* Tema escuro dinâmico com classe */
+body.dark {
+  background-color: var(--bg-escuro);
+  color: var(--texto-escuro);
+}
+
+body.dark form {
+  background-color: var(--input-escuro);
+  border: 1px solid var(--borda-escuro);
+}
+
+body.dark label,
+body.dark h1 {
+  color: var(--texto-escuro);
+}
+
+body.dark input[type="password"] {
+  background-color: var(--input-escuro);
+  color: var(--texto-escuro);
+  border: 1px solid var(--borda-escuro);
+}
+
+body.dark input[type="submit"] {
+  background-color: var(--btn-escuro);
+  color: var(--texto-escuro);
+}
+
+body.dark input[type="submit"]:hover {
+  background-color: var(--btn-hover-escuro);
+}
